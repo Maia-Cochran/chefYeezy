@@ -53,4 +53,4 @@ Click [here](https://frontend.turing.edu/projects/module-3/showcase.html) for pr
 
 3. Once you have cloned the repo, change into the directory and install the project dependencies. Run npm install or npm i to install project dependencies.
 
-4. Run npm start in the terminal to see the page.
+4. Run npm start in the terminal to see the page.# chefYeezy
