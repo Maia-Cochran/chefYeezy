@@ -12,7 +12,7 @@
 
 
 ## Overview
-Ever wanted to know what it would sound like if Kanye West were an Italian chef hero? Me too!
+Ever wanted to know what it would sound like if Kanye West were an Swedish chef hero? Me too!
 I am proud and honored to present to you, ✨ chefYeezy ✨ 👩‍🍳 🤌
 chefYeezy is an application that allows users to translate the best of Kanye West's quotes into chefs-speak.
 
