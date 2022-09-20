@@ -1,4 +1,4 @@
-# chefYeezy
+# ✨ chefYeezy ✨ 👩‍🍳 🤌
 
 ## Table of Contents
   - [Overview](#overview)
