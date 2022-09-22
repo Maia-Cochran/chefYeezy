@@ -3,20 +3,27 @@ import KanyeQuote from '../KanyeQuote/KanyeQuote'
 import './KanyeQuoteForm.css';
 
 const KanyeQuoteForm = ({quotes}) => {
-    const viewQuote =
-    quotes.map((quote, index) => {
+    const viewQuote = 
+    quotes.map((quote, index)=> {
         return (
             <KanyeQuote 
-            quote={quote}
+            quote={quote.quote}
             key={index}
             />
-            )
-        })
-        console.log(viewQuote)
+        )
+    })
+    // console.log(viewQuote)
+    //     return (
+    //        
+    //         )
+    //     })
+        // console.log(viewQuote)
 return ( 
     <div className='quote-list'>
-    `Hello, world!` 
+    {/* `Hello, world!`  */}
+    {/* {quotes} */}
     {viewQuote}
+    {/* <KanyeQuote quotes={quotes}/> */}
     </div>
     )
 }

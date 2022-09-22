@@ -7,21 +7,21 @@ class App extends Component {
   constructor(){
     super();
     this.state={
-      kanyeQuotes: [],
+      kanyeQuotes: '',
     };
   };
 
   componentDidMount() {
     getAllData().then(data => {
-      this.setState({kanyeQuotes: data[0].quote})
+      console.log('DATA', data)
+      this.setState({kanyeQuotes: data})
     })
   };
 
   render = () =>{
     return (
       <main className="App">
-        {/* {this.state.kanyeQuotes} */}
-        <KanyeQuoteForm viewQuote={this.state.kanyeQuotes}/>
+        <KanyeQuoteForm quotes={this.state.kanyeQuotes}/>
       </main>
     );
   };

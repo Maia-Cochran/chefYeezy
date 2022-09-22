@@ -1,10 +1,9 @@
 import React from 'react';
 import './KanyeQuote.css';
 
-const KanyeQuote = ({id, quote}) => {
+const KanyeQuote = ({quote}) => {
     return (
         <div className='kanye-quote'>
-            HOWDAY!
             {quote}
         </div>
     )
