@@ -4,7 +4,7 @@ import './KanyeQuoteForm.css';
 
 const KanyeQuoteForm = ({quotes}) => {
     const viewQuote = 
-    quotes.map((quote, index)=> {
+    Object.values(quotes).map((quote, index)=> {
         return (
             <KanyeQuote 
             quote={quote.quote}
@@ -12,18 +12,9 @@ const KanyeQuoteForm = ({quotes}) => {
             />
         )
     })
-    // console.log(viewQuote)
-    //     return (
-    //        
-    //         )
-    //     })
-        // console.log(viewQuote)
 return ( 
     <div className='quote-list'>
-    {/* `Hello, world!`  */}
-    {/* {quotes} */}
-    {viewQuote}
-    {/* <KanyeQuote quotes={quotes}/> */}
+        {viewQuote}
     </div>
     )
 }
