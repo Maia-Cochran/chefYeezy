@@ -12,7 +12,7 @@
 
 
 ## Overview
-Ever wanted to know what it would sound like if Kanye West were an Swedish chef hero? Me too!
+Ever wanted to know what it would sound like if Kanye West were a Swedish chef hero? Me too!
 I am proud and honored to present to you, ✨ chefYeezy ✨ 👩‍🍳 🤌
 chefYeezy is an application that allows users to translate the best of Kanye West's quotes into chefs-speak.
 
@@ -24,7 +24,6 @@ chefYeezy is an application that allows users to translate the best of Kanye Wes
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
 ![Vercel](https://user-images.githubusercontent.com/101746747/188785090-4abee495-4f46-4dba-b554-e16ded576297.png)
-
 
 ## Contributors
 - [Maia Cochran](https://github.com/Maia-Cochran) | [LinkedIn](https://www.linkedin.com/in/maiaecochran/)
