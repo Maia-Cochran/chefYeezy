@@ -1,12 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import KanyeQuote from '../KanyeQuote/KanyeQuote'
 import './KanyeQuoteForm.css';
 
-const KanyeQuoteForm = () => {
+const KanyeQuoteForm = ({quotes}) => {
+    const viewQuote =
+    quotes.map((quote, index) => {
+        return (
+            <KanyeQuote 
+            quote={quote}
+            key={index}
+            />
+            )
+        })
+        console.log(viewQuote)
 return ( 
-    <div className='quotes'>
+    <div className='quote-list'>
     `Hello, world!` 
-    <KanyeQuote />
+    {viewQuote}
     </div>
     )
 }

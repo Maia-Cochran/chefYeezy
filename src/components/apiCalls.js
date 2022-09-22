@@ -1,5 +1,5 @@
 const fetchAllData = (dataType) => {
-    return fetch([`https://api.kanye.rest`, `https://funtranslations.com/my/subscriptions/api/chef`])
+    return fetch(`https://api.kanye.rest`)
     .then(response => response.json())
     .catch(error => console.log(`API error: ${error.message}`));
   }
