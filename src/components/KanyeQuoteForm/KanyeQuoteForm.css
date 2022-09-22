@@ -1,0 +1,11 @@
+import React, { Component } from 'react';
+import './KanyeQuoteContainer'
+
+const KanyeQuoteContainer = () => {
+return ( 
+    <div className='quotes'>
+    `Hello, world!` 
+    <div>
+    )
+}
+export default KanyeQuoteContainer
