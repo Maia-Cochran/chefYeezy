@@ -30,6 +30,11 @@ chefSpeak() {
   })
 }
 
+//need to add spread opp for favoriting (like ideabox forms) to make home for them
+//need to write method for favoriting
+//build out chefSpeak component/rendering area
+//build out favorites page
+
   render = () =>{
     return (
       <main className="App">
