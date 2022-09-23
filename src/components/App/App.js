@@ -8,7 +8,8 @@ class App extends Component {
     super();
     this.state={
       kanyeQuotes: '',
-      chefSpeakTranslations: ''
+      chefSpeakTranslations: '',
+      favTranslatedQuotes: [],
     };
   };
 
