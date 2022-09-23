@@ -6,19 +6,9 @@ import './KanyeQuoteForm.css';
 //or this will remain the same, but with the Chef speak component being a class??? hm. 
 
 const KanyeQuoteForm = ({quotes}) => {
-    const viewQuote = 
-    Object.values(quotes).map((quote, index)=> {
-        return (
-            <KanyeQuote 
-            id={index}
-            quote={quote.quote}
-            key={index}
-            />
-        )
-    })
 return ( 
     <div className='quote-list'>
-        {viewQuote}
+        <KanyeQuote quote={quotes} id={quotes}/>
     </div>
     )
 }
