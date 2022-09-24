@@ -1,14 +1,18 @@
 import React from 'react';
-import KanyeQuote from '../KanyeQuote/KanyeQuote'
+import KanyeQuote from '../KanyeQuote/KanyeQuote';
+import chefKiss from "/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/images/ChefYeezee.png"
+// import triangle1 from '/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/images/triangles1.png'
+// import triangle2 from '/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/images/triangles2.png'
+// import triangle3 from '/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/images/triangles3.png'
 import './KanyeQuoteForm.css';
-
-//this component will eventually be a class component as a form that will then be rendered into the chef speak component
-//or this will remain the same, but with the Chef speak component being a class??? hm. 
 
 const KanyeQuoteForm = ({quotes}) => {
 return ( 
-    <div className='quote-list'>
-        <KanyeQuote quote={quotes} id={quotes}/>
+    <div className='quote-container'>
+        <div className='quote-box'>
+            <KanyeQuote quote={quotes} id={quotes} />
+        </div>
+            <img src={chefKiss} />
     </div>
     )
 }

@@ -1,6 +1,25 @@
-.quote-list {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
+.quote-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  width: 100%;
+   contain: content;
+}
+
+.quote-box {
+  margin-left: 20%;
+  padding: 10px;
+  justify-content: center;
+  align-self: center;
+  height: 50%;
+  width: 200%;
+  contain: content;
+}
+
+img {
+  margin: 5%;
+  margin-left: 15%;
+  height: 100%;
+  width: 25%;
+}
