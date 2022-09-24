@@ -1,5 +1,6 @@
-import React, { Component }  from 'react';
+import React from 'react';
 import TopNavBar from '../TopNavBar/TopNavBar';
+import FavoriteQuoteCard from '../FavoriteQuoteCard/FavoriteQuoteCard'
 import './FavoriteQuotesPage.css';
 
 //NOTES 
@@ -8,7 +9,18 @@ import './FavoriteQuotesPage.css';
 //"NEW CARDS" LIKE I WOULD IN AN IDEA BOX
 //UNSURE OF HOW TO ACHIEVE WITH THE TWO APIS
 
-const FavoriteQuotesPage = (props) => {
+const FavoriteQuotesPage = ({favQuotes}) => {
+    const allFavorites = favQuotes.map(fave => {
+       console.log('MAPPED CARD', fave)
+        return (
+            <FavoriteQuoteCard
+            id={fave.id}
+            key={fave.id}
+            kanyeQ={fave.kanyeQ}
+            chefQ={fave.chefQ}
+            />
+        )
+    })
     // addFavorite = event => {
     //     event.preventDefault();
     //     const newFavorite = this.state
@@ -20,15 +32,13 @@ const FavoriteQuotesPage = (props) => {
     //         [event.target.name]: event
     //     })
     // }
-
-    render() {
-        return (
-                <div className='fav-quotes'>
-                    This is where the fav quotes page will render!
-                    <TopNavBar />
-                </div>                
+    return (
+        <div className='fav-quotes'>
+            This is where the fav quotes page will render!
+            <TopNavBar />
+            <p>{allFavorites}</p>
+        </div>                
         )
     }
-}
 
 export default FavoriteQuotesPage;
