@@ -15,9 +15,9 @@ const FavoriteQuotesPage = ({favQuotes}) => {
         return (
             <FavoriteQuoteCard
             id={fave.id}
+            key={fave.id}
             kanyeQ={fave.kanyeQ}
             chefQ={fave.chefQ}
-            key={fave.id}
             />
         )
     })
@@ -36,7 +36,7 @@ const FavoriteQuotesPage = ({favQuotes}) => {
         <div className='fav-quotes'>
             This is where the fav quotes page will render!
             <TopNavBar />
-            {allFavorites}
+            <p>{allFavorites}</p>
         </div>                
         )
     }

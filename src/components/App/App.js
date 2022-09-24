@@ -20,7 +20,7 @@ class App extends Component {
 
   saveTranslation = () => {
     this.state.count++
-    const favs = [{ id: this.state.count, kanyeQ: this.state.kanyeQuotes, chefQ: this.state.chefSpeakTranslations }]
+    const favs = { id: this.state.count, kanyeQ: this.state.kanyeQuotes, chefQ: this.state.chefSpeakTranslations }
     console.log('FAVS', favs)
     this.setState({favoriteTranslations: [...this.state.favoriteTranslations, favs]})
     console.log(this.state.favoriteTranslations)
@@ -38,7 +38,7 @@ class App extends Component {
     return fetchChefData(this.state.kanyeQuotes)
       .then(result => {
         console.log("RESULT CHEF YEEZY NO KEYS", result)
-        this.setState({chefSpeakTranslations: [...result.contents.translated[0]]})
+        this.setState({chefSpeakTranslations: result.contents.translated})
       })
       .catch(error => console.log(`API error: ${error.message}`))
   }
