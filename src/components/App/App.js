@@ -9,32 +9,22 @@ import './App.css';
 class App extends Component {
   constructor(){
     super();
-    this.state={
+    this.state= {
       kanyeQuotes: '',
-      chefSpeakTranslations: [],
-      favTranslatedQuotes: [],
+      chefSpeakTranslations: 'this is test',
+      favoriteTranslations: [],
+      count: 0
     }
     this.saveTranslation = this.saveTranslation.bind(this)
   };
 
   saveTranslation = (newFavorite) => {
-    const favs = this.setState({faveTranslatedQuotes: 
-      [...{chefQuote: this.state.chefSpeakTranslations, kanyeQuote: this.state.kanyeQuotes}, newFavorite]
-    })
+    this.state.count++
+    const favs = [{ id: this.state.count, kanyeQ: this.state.kanyeQuotes, chefQ: this.state.chefSpeakTranslations }]
     console.log('FAVS', favs)
-    return favs
+    this.setState({favoriteTranslations: [...this.state.favoriteTranslations, favs]})
+    console.log(this.state.favoriteTranslations)
   } 
-
-  //need to build an object that includes both the chef quotes 
-  //and the kanye quotes... using the quote id of each????
-  //then deconstruct within the fave quotes page for posting 
-  
-  // setState({kanyeQuote: whatever, chefQuote: whatever})
-  // data : {}
-  //need to add spread opp for favoriting (like ideabox forms) to make home for them
-  //need to write method for favoriting
-
-  //build out favorites page
 
   componentDidMount() {
     fetchKanyeData().then(data => {
@@ -53,7 +43,6 @@ class App extends Component {
       .catch(error => console.log(`API error: ${error.message}`))
   }
   
-
   render = () =>{
     return (
       <main className="App">
@@ -64,7 +53,7 @@ class App extends Component {
           <button className="translate-button" onClick={() => this.chefSpeak()}>Translate! </button>
           <ChefSpeakContainer quotes={this.state.chefSpeakTranslations}/> 
           <button className='save-button' onClick={() => this.saveTranslation()}>Save-uh Zees Kwoot-ah!</button>
-          <FavoriteQuotesPage props={this.favTranslatedQuotes} />
+          {/* <FavoriteQuotesPage props={this.favTranslatedQuotes} /> */}
         {/* </Switch> */}
       </main>
     );
