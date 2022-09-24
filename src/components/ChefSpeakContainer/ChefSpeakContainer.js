@@ -21,8 +21,6 @@ return (
             key={quotes}
             />
         </div>
-        {/* {!quotes ? <p> loading... </p> : }  */}
-        {/* <p><button className='save-button'>Save-uh Zees Kwoot-ah!</button></p> */}
         <p><button className='favorites-button'>See My Faves!</button></p>
         {/* <div className='triangles1'>
                 <img className="triangle1" src={triangle1} />

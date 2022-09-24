@@ -11,7 +11,7 @@ class App extends Component {
     super();
     this.state= {
       kanyeQuotes: '',
-      chefSpeakTranslations: '',
+      chefSpeakTranslations: '✨ Click-ah trans-a-late to zee-ah kuwote heer 👩‍🍳 🤌 ✨',
       favoriteTranslations: [],
       count: 0
     }
@@ -24,10 +24,17 @@ class App extends Component {
     this.setState({favoriteTranslations: [...this.state.favoriteTranslations, favs]})
     console.log(this.state.favoriteTranslations)
   } 
-
+  
+  getNewKanyeQuote() {
+    fetchKanyeData().then(data => {
+      this.setState({kanyeQuotes: data.quote})
+    })
+    .catch(error => console.log(`API error: ${error.message}`))
+    this.setState({chefSpeakTranslations: '✨ Click-ah trans-a-late to zee-ah kuwote heer 👩‍🍳 🤌 ✨'})
+  };
+  
   componentDidMount() {
     fetchKanyeData().then(data => {
-      console.log('KANYE QUOTE', data.quote)
       this.setState({kanyeQuotes: data.quote})
     })
     .catch(error => console.log(`API error: ${error.message}`))
@@ -46,15 +53,13 @@ class App extends Component {
     return (
       <main className="App">
           <KanyeQuoteForm quotes={this.state.kanyeQuotes}/>
-          <button className="translate-button" onClick={() => this.chefSpeak()}>Translate! </button>
+          <button className="new-quote-button" onClick={() => this.getNewKanyeQuote()}>Click for new quote!</button>
+          <button className="translate-button" onClick={() => this.chefSpeak()}>Translate!</button>
           <ChefSpeakContainer quotes={this.state.chefSpeakTranslations}/> 
           <button className='save-button' onClick={() => this.saveTranslation()}>Save-uh Zees Kwoot-ah!</button>
           <FavoriteQuotesPage favQuotes={this.state.favoriteTranslations} />
       </main>
     );
-    ///DO I NEED A FAV QUOTE LIST -- additional component????
-    ///Sick Trick idea box is a good reference for this, maybe??
-    ///make a list for both of the states
   };
 };
 
