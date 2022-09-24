@@ -2,6 +2,12 @@ import React, { Component }  from 'react';
 import TopNavBar from '../TopNavBar/TopNavBar';
 import './FavoriteQuotesPage.css';
 
+//NOTES 
+//THINKING FAVS WILL WORK SIMILAR TO IDEA BOX???
+//USE ROUTER TO SWITCH BETWEEN VIEWS, BUT RENDER THE
+//"NEW CARDS" LIKE I WOULD IN AN IDEA BOX
+//UNSURE OF HOW TO ACHIEVE WITH THE TWO APIS
+
 class FavoriteQuotesPage extends Component {
     constructor(props) {
         super(props);
