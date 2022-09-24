@@ -4,9 +4,9 @@ import './FavoriteQuoteCard.css';
 const FavoriteQuoteCard = ({ id, kanyeQ, chefQ }) => {
     return (
         <div className='favorite-quote'>
-            <p>{kanyeQ}</p>
+            <p>Kanye Said: <i>"{kanyeQ}"</i></p>
             <p> - - - - - - - - - - </p>
-            <p>{chefQ}</p>
+            <p>Chef Translation: <i>"{chefQ}"</i></p>
         </div>
     )
 }

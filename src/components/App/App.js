@@ -11,11 +11,10 @@ class App extends Component {
     super();
     this.state= {
       kanyeQuotes: '',
-      chefSpeakTranslations: 'this is a test',
+      chefSpeakTranslations: '',
       favoriteTranslations: [],
       count: 0
     }
-    this.saveTranslation = this.saveTranslation.bind(this)
   };
 
   saveTranslation = () => {
