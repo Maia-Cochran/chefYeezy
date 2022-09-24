@@ -11,14 +11,14 @@ class App extends Component {
     super();
     this.state= {
       kanyeQuotes: '',
-      chefSpeakTranslations: 'this is test',
+      chefSpeakTranslations: 'this is a test',
       favoriteTranslations: [],
       count: 0
     }
     this.saveTranslation = this.saveTranslation.bind(this)
   };
 
-  saveTranslation = (newFavorite) => {
+  saveTranslation = () => {
     this.state.count++
     const favs = [{ id: this.state.count, kanyeQ: this.state.kanyeQuotes, chefQ: this.state.chefSpeakTranslations }]
     console.log('FAVS', favs)
@@ -38,7 +38,7 @@ class App extends Component {
     return fetchChefData(this.state.kanyeQuotes)
       .then(result => {
         console.log("RESULT CHEF YEEZY NO KEYS", result)
-        this.setState({chefSpeakTranslations: result.contents.translated})
+        this.setState({chefSpeakTranslations: [...result.contents.translated[0]]})
       })
       .catch(error => console.log(`API error: ${error.message}`))
   }
@@ -46,15 +46,11 @@ class App extends Component {
   render = () =>{
     return (
       <main className="App">
-        {/* <Switch> */}
-          {/* <Route exact path='/' render={ () => <KanyeQuoteForm quotes={this.state.kanyeQuotes}/> }/> */}
-          {/* <Route exact path='/' render={ () =>  <ChefSpeakContainer /> }/> */}
           <KanyeQuoteForm quotes={this.state.kanyeQuotes}/>
           <button className="translate-button" onClick={() => this.chefSpeak()}>Translate! </button>
           <ChefSpeakContainer quotes={this.state.chefSpeakTranslations}/> 
           <button className='save-button' onClick={() => this.saveTranslation()}>Save-uh Zees Kwoot-ah!</button>
-          {/* <FavoriteQuotesPage props={this.favTranslatedQuotes} /> */}
-        {/* </Switch> */}
+          <FavoriteQuotesPage favQuotes={this.state.favoriteTranslations} />
       </main>
     );
     ///DO I NEED A FAV QUOTE LIST -- additional component????
