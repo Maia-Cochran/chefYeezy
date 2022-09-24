@@ -4,17 +4,27 @@ import KanyeQuoteForm from '../KanyeQuoteForm/KanyeQuoteForm';
 import ChefSpeakContainer from '../ChefSpeakContainer/ChefSpeakContainer';
 import FavoriteQuotesPage from '../FavoriteQuotesPage/FavoriteQuotesPage';
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+// import { Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   constructor(){
     super();
-    this.state={
+    this.state= {
       kanyeQuotes: '',
-      chefSpeakTranslations: [],
-      favTranslatedQuotes: [],
-    };
+      chefSpeakTranslations: 'this is test',
+      favoriteTranslations: [],
+      count: 0
+    }
+    this.saveTranslation = this.saveTranslation.bind(this)
   };
+
+  saveTranslation = (newFavorite) => {
+    this.state.count++
+    const favs = [{ id: this.state.count, kanyeQ: this.state.kanyeQuotes, chefQ: this.state.chefSpeakTranslations }]
+    console.log('FAVS', favs)
+    this.setState({favoriteTranslations: [...this.state.favoriteTranslations, favs]})
+    console.log(this.state.favoriteTranslations)
+  } 
 
   componentDidMount() {
     fetchKanyeData().then(data => {
@@ -24,7 +34,7 @@ class App extends Component {
     .catch(error => console.log(`API error: ${error.message}`))
   };
 
-  chefSpeak(){
+  chefSpeak() {
     return fetchChefData(this.state.kanyeQuotes)
       .then(result => {
         console.log("RESULT CHEF YEEZY NO KEYS", result)
@@ -33,13 +43,6 @@ class App extends Component {
       .catch(error => console.log(`API error: ${error.message}`))
   }
   
-  // setState({kanyeQuote: whatever, chefQuote: whatever})
-  // data : {}
-//need to add spread opp for favoriting (like ideabox forms) to make home for them
-//need to write method for favoriting
-//build out chefSpeak component/rendering area
-//build out favorites page
-
   render = () =>{
     return (
       <main className="App">
@@ -49,10 +52,14 @@ class App extends Component {
           <KanyeQuoteForm quotes={this.state.kanyeQuotes}/>
           <button className="translate-button" onClick={() => this.chefSpeak()}>Translate! </button>
           <ChefSpeakContainer quotes={this.state.chefSpeakTranslations}/> 
-          <FavoriteQuotesPage />
+          <button className='save-button' onClick={() => this.saveTranslation()}>Save-uh Zees Kwoot-ah!</button>
+          {/* <FavoriteQuotesPage props={this.favTranslatedQuotes} /> */}
         {/* </Switch> */}
       </main>
     );
+    ///DO I NEED A FAV QUOTE LIST -- additional component????
+    ///Sick Trick idea box is a good reference for this, maybe??
+    ///make a list for both of the states
   };
 };
 

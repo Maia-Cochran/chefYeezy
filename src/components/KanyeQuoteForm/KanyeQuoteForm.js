@@ -10,9 +10,13 @@ const KanyeQuoteForm = ({quotes}) => {
 return ( 
     <div className='quote-container'>
         <div className='quote-box'>
-            <KanyeQuote quote={quotes} id={quotes} />
+            <KanyeQuote 
+            quote={quotes} 
+            id={quotes} 
+            key={quotes}
+            />
         </div>
-            <img src={chefKiss} />
+            <img src={chefKiss} alt=''/>
     </div>
     )
 }

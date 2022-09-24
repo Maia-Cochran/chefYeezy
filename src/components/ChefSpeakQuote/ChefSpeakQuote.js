@@ -5,6 +5,7 @@ const ChefSpeakQuote = ({id, quote}) => {
     return (
         <div className='chef-quote'>
             <p>{quote}</p>
+            {/* <button className='favorite-button' /> */}
         </div>
     )
 }

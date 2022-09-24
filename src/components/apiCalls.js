@@ -9,5 +9,8 @@ const fetchChefData = async (kanyeSays) => {
     .then(response => response.json())
     .catch(error => console.log(`API error: ${error.message}`));
   }
+
+  //CANNOT GET API KEY TO WORK, ONLY HAVE 5 REQUESTS PER HOUR
+  //FRUSTRATING TO ACHIEVE... ? WILL LOOK AT BEYOND FUNCTIONALITY
  
 export { fetchKanyeData, fetchChefData}
