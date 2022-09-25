@@ -3,6 +3,7 @@ import { fetchKanyeData, fetchChefData } from '../apiCalls';
 import KanyeQuoteForm from '../KanyeQuoteForm/KanyeQuoteForm';
 import ChefSpeakContainer from '../ChefSpeakContainer/ChefSpeakContainer';
 import FavoriteQuotesPage from '../FavoriteQuotesPage/FavoriteQuotesPage';
+import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import './App.css';
 import { Route, Switch, Link } from 'react-router-dom';
 
