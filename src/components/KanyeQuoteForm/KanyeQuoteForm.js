@@ -16,7 +16,7 @@ const KanyeQuoteForm = ({quotes}) => {
             key={quotes}
             />
         </div>
-            <img src={chefKiss} alt=''/>
+            <img className="chef-yeezy-pic" src={chefKiss} alt=''/>
     </div>
     )
 }

@@ -17,9 +17,13 @@ const FavoriteQuotesPage = ({favQuotes}) => {
     })
     return (
         <div className='fav-quotes'>
-            This is where the fav quotes page will render!
             <TopNavBar />
-            <p>{allFavorites}</p>
+            <div className='saved-translation-container'>
+                <p>
+                    {!allFavorites.length > 0 ? `Oh no! You have not saved any translations yet! 
+                    Click 'Home' above to return to chefYeezy for his best chef speak. 😏` : allFavorites}
+                </p>
+            </div>
         </div>                
         )
     }
