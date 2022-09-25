@@ -3,12 +3,6 @@ import TopNavBar from '../TopNavBar/TopNavBar';
 import FavoriteQuoteCard from '../FavoriteQuoteCard/FavoriteQuoteCard'
 import './FavoriteQuotesPage.css';
 
-//NOTES 
-//THINKING FAVS WILL WORK SIMILAR TO IDEA BOX???
-//USE ROUTER TO SWITCH BETWEEN VIEWS, BUT RENDER THE
-//"NEW CARDS" LIKE I WOULD IN AN IDEA BOX
-//UNSURE OF HOW TO ACHIEVE WITH THE TWO APIS
-
 const FavoriteQuotesPage = ({favQuotes}) => {
     const allFavorites = favQuotes.map(fave => {
        console.log('MAPPED CARD', fave)
