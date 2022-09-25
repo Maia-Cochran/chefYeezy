@@ -13,7 +13,7 @@ class App extends Component {
     super();
     this.state= {
       kanyeQuotes: '',
-      chefSpeakTranslations: 'Click the traslate button to view translation!',
+      chefSpeakTranslations: '' || 'Click the traslate button to view translation!',
       favoriteTranslations: [],
     }
   };
@@ -42,7 +42,7 @@ class App extends Component {
   };
 
   chefSpeak() {
-    return fetchChefData(this.state.kanyeQuotes)
+    fetchChefData(this.state.kanyeQuotes)
       .then(result => {
         console.log("RESULT CHEF YEEZY NO KEYS", result)
         this.setState({chefSpeakTranslations: result.contents.translated})
