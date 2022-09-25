@@ -21,17 +21,6 @@ const FavoriteQuotesPage = ({favQuotes}) => {
             />
         )
     })
-    // addFavorite = event => {
-    //     event.preventDefault();
-    //     const newFavorite = this.state
-    //     this.props.addFavorite(newFavorite)
-    // }
-
-    // handleChange = event => {
-    //     this.setState({
-    //         [event.target.name]: event
-    //     })
-    // }
     return (
         <div className='fav-quotes'>
             This is where the fav quotes page will render!
