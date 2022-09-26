@@ -2,7 +2,7 @@
     background: #FA568F;
     border-radius: 18px;
     border: 1px solid #deaac4;
-    padding: 20px;
+    padding: 2em;
     contain: content;
     margin-top: 1%;
 }
@@ -10,18 +10,22 @@
 .saved-translation-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 1%;
+    margin: 1em;
     justify-content: center;
     height: 100vh;
     width: 100%;
     contain: content;
+    margin-left: -.5em;
+    margin-right: -.5em;
 }
-      
-button {
+
+.home-button {
     border-radius: 10px;
     height: 50px;
     width: 175px;
     background: #40F5E5;
     font-size: 90%;
     contain: content;
+    margin-top: 0;
+    margin-bottom: 0;
 }
