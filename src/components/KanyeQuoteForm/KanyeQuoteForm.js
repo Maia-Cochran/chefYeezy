@@ -7,7 +7,7 @@ import chefKiss from "/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/
 import './KanyeQuoteForm.css';
 
 const KanyeQuoteForm = ({quotes}) => {
-return ( 
+    return (
     <div className='quote-container'>
         <div className='quote-box'>
             <KanyeQuote 
@@ -16,7 +16,7 @@ return (
             key={quotes}
             />
         </div>
-            <img src={chefKiss} alt=''/>
+            <img className="chef-yeezy-pic" src={chefKiss} alt=''/>
     </div>
     )
 }
