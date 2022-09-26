@@ -4,8 +4,12 @@ import './ChefSpeakQuote.css';
 
 const ChefSpeakQuote = ({ id, quote }) => {
     return (
-        <div className='chef-quote'>
-            {quote}
+        <div className='translation-container'>
+            <div className='translation-box'>
+                <div className='chef-quote'>
+                    {quote}
+                </div>
+            </div>
         </div>
     )
 }

@@ -6,7 +6,6 @@ import './FavoriteQuotesPage.css';
 
 const FavoriteQuotesPage = ({ favQuotes }) => {
     const allFavorites = favQuotes.map(fave => {
-        console.log('MAPPED CARD', fave)
         return (
             <FavoriteQuoteCard
                 id={fave.id}
@@ -20,7 +19,7 @@ const FavoriteQuotesPage = ({ favQuotes }) => {
         <div className='fav-quotes'>
             <TopNavBar />
             <div className='saved-translation-container'>
-                    {!allFavorites.length > 0 ? `Oh no! You have not saved any translations yet! 
+                {!allFavorites.length > 0 ? `Oh no! You have not saved any translations yet! 
                     Click 'Home' above to return to chefYeezy for his best chef speak. 😏` : allFavorites}
             </div>
         </div>

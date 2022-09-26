@@ -22,7 +22,7 @@ describe('Favorites Page', () => {
       cy.get('.saved-translation-container')
     })
   });
-  
+
   it("user should be able to return to the home page view on button click", () => {
     cy.get('button.home-button').should('be.visible')
   });
