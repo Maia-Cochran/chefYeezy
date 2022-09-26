@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { fetchKanyeData, fetchChefData } from '../apiCalls';
-import KanyeQuoteContainer from '../KanyeQuoteContainer/KanyeQuoteContainer';
-import ChefSpeakContainer from '../ChefSpeakContainer/ChefSpeakContainer';
+import KanyeQuote from '../KanyeQuote/KanyeQuote';
+import ChefSpeakQuote from '../ChefSpeakQuote/ChefSpeakQuote';
 import FavoriteQuotesPage from '../FavoriteQuotesPage/FavoriteQuotesPage';
 import Header from '../Header/Header'
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
@@ -9,9 +9,9 @@ import './App.css';
 import { Route, Switch, Link } from 'react-router-dom';
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
-    this.state= {
+    this.state = {
       kanyeQuotes: '',
       chefSpeakTranslations: 'Click the traslate button to view translation!',
       favoriteTranslations: [],
@@ -22,55 +22,55 @@ class App extends Component {
     event.preventDefault();
     const favs = { id: Date.now(), kanyeQ: this.state.kanyeQuotes, chefQ: this.state.chefSpeakTranslations }
     console.log('FAVS', favs)
-    this.setState({favoriteTranslations: [...this.state.favoriteTranslations, favs]})
+    this.setState({ favoriteTranslations: [...this.state.favoriteTranslations, favs] })
     console.log(this.state.favoriteTranslations)
-  } 
+  }
 
   getNewKanyeQuote() {
     fetchKanyeData().then(data => {
-      this.setState({kanyeQuotes: data.quote})
+      this.setState({ kanyeQuotes: data.quote })
     })
-    .catch(error => console.log(`API error: ${error.message}`))
-    this.setState({chefSpeakTranslations: '✨ Click-ah trans-a-late to zee-ah kuwote heer 👩‍🍳 🤌 ✨'})
+      .catch(error => console.log(`API error: ${error.message}`))
+    this.setState({ chefSpeakTranslations: '✨ Click-ah trans-a-late to zee-ah kuwote heer 👩‍🍳 🤌 ✨' })
   };
-  
+
   componentDidMount() {
     fetchKanyeData().then(data => {
-      this.setState({kanyeQuotes: data.quote})
+      this.setState({ kanyeQuotes: data.quote })
     })
-    .catch(error => console.log(`API error: ${error.message}`))
+      .catch(error => console.log(`API error: ${error.message}`))
   };
 
   chefSpeak() {
     fetchChefData(this.state.kanyeQuotes)
       .then(result => {
-        console.log("RESULT CHEF YEEZY NO KEYS", result)
-        this.setState({chefSpeakTranslations: result.contents.translated})
+        console.log("KANYE API RESULT", result)
+        this.setState({ chefSpeakTranslations: result.contents.translated })
       })
       .catch(error => console.log(`API error: ${error.message}`))
   }
-  
-  render = () =>{
+
+  render = () => {
     return (
       <main className="App">
         <Header />
         <Switch>
           <Route exact path='/'>
-            <KanyeQuoteContainer quotes={this.state.kanyeQuotes}/>
+            <KanyeQuote quote={this.state.kanyeQuotes} />
             <div className='translate-and-new-quote-button-container'>
               <button className="new-quote-button" onClick={() => this.getNewKanyeQuote()}>Click for new quote!</button>
               <button className="translate-button" onClick={() => this.chefSpeak()}>Translate!</button>
             </div>
-            <ChefSpeakContainer quotes={this.state.chefSpeakTranslations}/>
+            <ChefSpeakQuote quote={this.state.chefSpeakTranslations} />
             <div className='save-and-view-faves-button-container'>
-              <button className='save-button' onClick={(event) => this.saveTranslation(event)}>Save-uh Zees Kwoot-ah!</button> 
-          <Link to="/myFavoriteQuotes" className='link-to-my-favorites'>
-            <button className='access-favorites-button'>Go To My Faves!</button>
-          </Link>
+              <button className='save-button' onClick={(event) => this.saveTranslation(event)}>Save-uh Zees Kwoot-ah!</button>
+              <Link to="/myFavoriteQuotes" className='link-to-my-favorites'>
+                <button className='access-favorites-button'>Go To My Faves!</button>
+              </Link>
             </div>
           </Route>
           <Route exact path='/myFavoriteQuotes'>
-            <FavoriteQuotesPage favQuotes={this.state.favoriteTranslations}/>
+            <FavoriteQuotesPage favQuotes={this.state.favoriteTranslations} />
           </Route>
           <Route component={NotFoundPage} />
         </Switch>

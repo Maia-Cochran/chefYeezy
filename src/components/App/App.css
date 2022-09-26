@@ -1,7 +1,7 @@
 .App {
   font-family: 'Nunito Sans';
   display: grid;
-  padding: 2%;
+  padding: 1em;
   text-align: center;
 }
 
@@ -9,5 +9,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5%;
+  gap: 2em; 
+}
+
+button {
+  border-radius: 10px;
+  height: 50px;
+  width: 175px;
+  background: #40F5E5;
+  contain: content;
+  margin-bottom: -3em;
 }
