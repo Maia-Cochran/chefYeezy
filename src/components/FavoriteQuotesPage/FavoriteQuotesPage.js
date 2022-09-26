@@ -3,15 +3,15 @@ import TopNavBar from '../TopNavBar/TopNavBar';
 import FavoriteQuoteCard from '../FavoriteQuoteCard/FavoriteQuoteCard'
 import './FavoriteQuotesPage.css';
 
-const FavoriteQuotesPage = ({favQuotes}) => {
+const FavoriteQuotesPage = ({ favQuotes }) => {
     const allFavorites = favQuotes.map(fave => {
-       console.log('MAPPED CARD', fave)
+        console.log('MAPPED CARD', fave)
         return (
             <FavoriteQuoteCard
-            id={fave.id}
-            key={fave.id}
-            kanyeQ={fave.kanyeQ}
-            chefQ={fave.chefQ}
+                id={fave.id}
+                key={fave.id}
+                kanyeQ={fave.kanyeQ}
+                chefQ={fave.chefQ}
             />
         )
     })
@@ -19,13 +19,11 @@ const FavoriteQuotesPage = ({favQuotes}) => {
         <div className='fav-quotes'>
             <TopNavBar />
             <div className='saved-translation-container'>
-                <p>
                     {!allFavorites.length > 0 ? `Oh no! You have not saved any translations yet! 
                     Click 'Home' above to return to chefYeezy for his best chef speak. 😏` : allFavorites}
-                </p>
             </div>
-        </div>                
-        )
-    }
+        </div>
+    )
+}
 
 export default FavoriteQuotesPage;

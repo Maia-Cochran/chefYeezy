@@ -1,5 +1,13 @@
 .App {
+  font-family: 'Nunito Sans';
   display: grid;
+  padding: 2%;
   text-align: center;
-  background-image: url(/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/images/backdrop-image.png);
+}
+
+.translate-and-new-quote-button-container, .save-and-view-faves-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
 }

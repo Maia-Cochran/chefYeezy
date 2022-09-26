@@ -1,14 +1,15 @@
 body {
   margin: 0;
   background:#182132;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Nunito Sans';
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/images/backdrop-image.png);
+}
+
+.font-link {
+  font-family: 'Nunito Sans';
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Nunito Sans';
 }

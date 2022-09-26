@@ -1,8 +1,8 @@
 .translation-container {
-  padding: 20px;
   display: flex;
-  flex-direction: column;
+  align-self: center;
   contain: content;
+  height: 100%;
   text-shadow: 1px 1px 0 #000,
   -1px 1px 0 #000,
   1px -1px 0 #000,
@@ -13,28 +13,16 @@
 }
 
 .translation-box {
-  flex-direction: row;
-  margin-left: 25%;
-  /* padding: 10px; */
-  justify-content: center;
-  align-self: center;
-  height: 50%;
-  width: 50%;
+  margin-left: 10%;
+  padding: 10px;
+  height: 100%;
+  width: 200%;
   contain: content;
 }
 
-/* .triangles1 {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-} */
-
 button {
   border-radius: 10px;
-  height: 50px;
-  width: 175px;
   background: #40F5E5;
-  /* color: whitesmoke bold; */
   font-size: 90%;
   contain: content;
 }

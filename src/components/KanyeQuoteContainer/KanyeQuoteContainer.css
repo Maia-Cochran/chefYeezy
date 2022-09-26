@@ -1,0 +1,29 @@
+.quote-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  contain: content;
+  text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000
+}
+
+.quote-box {
+  margin-left: 10%;
+  padding: 10px;
+  height: 100%;
+  width: 200%;
+  contain: content;
+}
+
+img {
+  margin-left: 10%;
+  height: 100%;
+  width: 20%;
+  border-radius: 27px;
+}
