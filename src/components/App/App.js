@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { fetchKanyeData, fetchChefData } from '../apiCalls';
-import KanyeQuoteForm from '../KanyeQuoteForm/KanyeQuoteForm';
+import KanyeQuoteContainer from '../KanyeQuoteContainer/KanyeQuoteContainer';
 import ChefSpeakContainer from '../ChefSpeakContainer/ChefSpeakContainer';
 import FavoriteQuotesPage from '../FavoriteQuotesPage/FavoriteQuotesPage';
 import Header from '../Header/Header'
@@ -42,7 +42,7 @@ class App extends Component {
   };
 
   chefSpeak() {
-    return fetchChefData(this.state.kanyeQuotes)
+    fetchChefData(this.state.kanyeQuotes)
       .then(result => {
         console.log("RESULT CHEF YEEZY NO KEYS", result)
         this.setState({chefSpeakTranslations: result.contents.translated})
@@ -56,14 +56,18 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path='/'>
-            <KanyeQuoteForm quotes={this.state.kanyeQuotes}/>
-            <button className="new-quote-button" onClick={() => this.getNewKanyeQuote()}>Click for new quote!</button>
-            <button className="translate-button" onClick={() => this.chefSpeak()}>Translate!</button>
+            <KanyeQuoteContainer quotes={this.state.kanyeQuotes}/>
+            <div className='translate-and-new-quote-button-container'>
+              <button className="new-quote-button" onClick={() => this.getNewKanyeQuote()}>Click for new quote!</button>
+              <button className="translate-button" onClick={() => this.chefSpeak()}>Translate!</button>
+            </div>
             <ChefSpeakContainer quotes={this.state.chefSpeakTranslations}/>
-            <button className='save-button' onClick={(event) => this.saveTranslation(event)}>Save-uh Zees Kwoot-ah!</button> 
+            <div className='save-and-view-faves-button-container'>
+              <button className='save-button' onClick={(event) => this.saveTranslation(event)}>Save-uh Zees Kwoot-ah!</button> 
           <Link to="/myFavoriteQuotes" className='link-to-my-favorites'>
-            <p><button className='access-favorites-button'>Go To My Faves!</button></p>
+            <button className='access-favorites-button'>Go To My Faves!</button>
           </Link>
+            </div>
           </Route>
           <Route exact path='/myFavoriteQuotes'>
             <FavoriteQuotesPage favQuotes={this.state.favoriteTranslations}/>

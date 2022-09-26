@@ -1,3 +1,13 @@
 .App {
+  font-family: 'Nunito Sans';
+  display: grid;
+  padding: 2%;
   text-align: center;
+}
+
+.translate-and-new-quote-button-container, .save-and-view-faves-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
 }

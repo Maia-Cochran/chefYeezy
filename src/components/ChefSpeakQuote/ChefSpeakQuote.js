@@ -4,7 +4,7 @@ import './ChefSpeakQuote.css';
 const ChefSpeakQuote = ({id, quote}) => {
     return (
         <div className='chef-quote'>
-            <p>{quote}</p>
+            {quote}
         </div>
     )
 }
