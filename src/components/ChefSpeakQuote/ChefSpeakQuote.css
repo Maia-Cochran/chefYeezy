@@ -22,12 +22,12 @@
   height: 100%;
   margin: 2em;
   text-shadow: 1px 1px 0 #000,
-  -1px 1px 0 #000,
-  1px -1px 0 #000,
-  -1px -1px 0 #000,
-  0px 1px 0 #000,
-  0px -1px 0 #000,
-  -1px 0px 0 #000
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000
 }
 
 .translation-box {

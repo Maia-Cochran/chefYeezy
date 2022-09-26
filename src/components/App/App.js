@@ -44,7 +44,6 @@ class App extends Component {
   chefSpeak() {
     fetchChefData(this.state.kanyeQuotes)
       .then(result => {
-        console.log("KANYE API RESULT", result)
         this.setState({ chefSpeakTranslations: result.contents.translated })
       })
       .catch(error => console.log(`API error: ${error.message}`))
