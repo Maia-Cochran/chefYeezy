@@ -4,6 +4,7 @@ import chefKiss from "/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/
 import './KanyeQuoteContainer.css';
 
 const KanyeQuoteForm = ({ quotes }) => {
+
     return (
         <div className='quote-container'>
             <div className='quote-box'>

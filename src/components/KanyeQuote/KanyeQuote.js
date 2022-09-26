@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './KanyeQuote.css';
 
-const KanyeQuote = ({id, quote}) => {
+const KanyeQuote = ({ id, quote }) => {
     return (
         <div className='kanye-quote'>
             {quote}
@@ -10,3 +11,7 @@ const KanyeQuote = ({id, quote}) => {
 }
 
 export default KanyeQuote;
+
+KanyeQuote.propTypes = {
+    quote: PropTypes.string,
+}

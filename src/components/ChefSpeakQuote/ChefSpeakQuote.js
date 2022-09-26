@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './ChefSpeakQuote.css';
 
-const ChefSpeakQuote = ({id, quote}) => {
+const ChefSpeakQuote = ({ id, quote }) => {
     return (
         <div className='chef-quote'>
             {quote}
@@ -10,3 +11,7 @@ const ChefSpeakQuote = ({id, quote}) => {
 }
 
 export default ChefSpeakQuote;
+
+ChefSpeakQuote.propTypes = {
+    quote: PropTypes.string,
+}

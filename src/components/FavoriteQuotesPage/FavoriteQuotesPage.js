@@ -1,6 +1,7 @@
 import React from 'react';
 import TopNavBar from '../TopNavBar/TopNavBar';
-import FavoriteQuoteCard from '../FavoriteQuoteCard/FavoriteQuoteCard'
+import FavoriteQuoteCard from '../FavoriteQuoteCard/FavoriteQuoteCard';
+import PropTypes from 'prop-types';
 import './FavoriteQuotesPage.css';
 
 const FavoriteQuotesPage = ({ favQuotes }) => {
@@ -27,3 +28,8 @@ const FavoriteQuotesPage = ({ favQuotes }) => {
 }
 
 export default FavoriteQuotesPage;
+
+FavoriteQuotesPage.propTypes = {
+    favQuotes: PropTypes.array,
+    saveTranslation: PropTypes.func
+};
