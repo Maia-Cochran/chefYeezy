@@ -10,7 +10,6 @@
   - [Project Spec](#project-spec)
   - [Set Up](#set-up)
 
-
 ## Overview
 Ever wanted to know what it would sound like if Kanye West were a Swedish chef hero? Me too!
 I am proud and honored to present to you, ✨ chefYeezy ✨ 👩‍🍳 🤌
@@ -29,27 +28,23 @@ chefYeezy is an application that allows users to translate the best of Kanye Wes
 - [Maia Cochran](https://github.com/Maia-Cochran) | [LinkedIn](https://www.linkedin.com/in/maiaecochran/)
 
 ## Deployed Page
-You can view the deployed webpage [here]()!
+You can view the deployed webpage [here](https://chef-yeezy-app.vercel.app/)!
 
+## Demo
+https://user-images.githubusercontent.com/101746747/192404983-6e6b4d89-56c0-419a-9d73-5479ba038970.mov
 
-## Illustrations
-[PHOTOS AND DEMO VIDEO TBD]
+## Set Up
+1. Go to [this](https://github.com/camianderson/chefYeezy) repository and clone it. 
+2. `cd` into the directory.
+3. Run `npm i` in your terminal
+4. Run `npm run start-dev`
+6. Go to http://localhost:3000/ to view the site.
 
 ## Future Additions and Improvements
 - Generate custom phrases to translate into chef’s speak
-- Star my favorite quotes and categorize by favorites
+- Build audio-reader for the translated quote so user can hear it
 - List the date that the quote was generated
-
+- Star my favorite quotes and categorize by date
 
 ## Project Spec
 Click [here](https://frontend.turing.edu/projects/module-3/showcase.html) for project specs, provided by [Turing School of Software and Design](https://turing.edu/).
-
-
-## Set Up
-1. Start by going [here](https://github.com/Maia-Cochran/chef-yeezy). From here you will want to click on the green rectangular button titled 'Code'. This should open a drop down menu where you should see a link. To the left of the link there should be an icon with two over lapping squares. You can click the icon to copy the link.
-
-2. You will want to clone down the [repo](https://github.com/Maia-Cochran/chef-yeezy.git) to you terminal using git clone.
-
-3. Once you have cloned the repo, change into the directory and install the project dependencies. Run npm install or npm i to install project dependencies.
-
-4. Run npm start in the terminal to see the page.# chefYeezy
