@@ -38,8 +38,9 @@ You can view the deployed webpage [here](https://chef-yeezy-app.vercel.app/)!
 4. Run `npm run start-dev`
 6. Go to http://localhost:3000/ to view the site.
 
-## Illustrations
-[Screen Recording 2022-09-26 at 5.22.07 PM.zip](https://github.com/Maia-Cochran/chefYeezy/files/9650465/Screen.Recording.2022-09-26.at.5.22.07.PM.zip)
+## Demo
+(https://user-images.githubusercontent.com/101746747/192404983-6e6b4d89-56c0-419a-9d73-5479ba038970.mov)
+
 
 
 ## Future Additions and Improvements
