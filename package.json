@@ -36,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cy-verify-downloads": "^0.1.10",
+    "cypress": "^10.9.0"
   }
 }

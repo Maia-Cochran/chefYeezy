@@ -2,7 +2,7 @@ describe('App, New Kanye Quote', () => {
   beforeEach(() => {
     cy.intercept('GET', 'https://api.kanye.rest', { fixture: 'newKanyeQuote.json' }),
       cy.intercept('GET', `https://api.funtranslations.com/translate/chef.json?text=I%20am%20running%20for%20President%20of%20the%20United%20States`, { fixture: 'chefSpeakTranslation2.json' }),
-      cy.visit('http://localhost:3000/')
+      cy.visit('https://chef-yeezy-app.vercel.app/')
   });
 
   it("user should be able to click on 'get new quote' button to receive a new Kanye quote", () => {
