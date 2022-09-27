@@ -21,9 +21,7 @@ class App extends Component {
   saveTranslation = (event) => {
     event.preventDefault();
     const favs = { id: Date.now(), kanyeQ: this.state.kanyeQuotes, chefQ: this.state.chefSpeakTranslations }
-    console.log('FAVS', favs)
     this.setState({ favoriteTranslations: [...this.state.favoriteTranslations, favs] })
-    console.log(this.state.favoriteTranslations)
   }
 
   getNewKanyeQuote() {
