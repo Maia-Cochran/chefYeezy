@@ -29,24 +29,23 @@ chefYeezy is an application that allows users to translate the best of Kanye Wes
 
 ## Deployed Page
 You can view the deployed webpage [here](https://chef-yeezy-app.vercel.app/)!
+<iframe src="https://giphy.com/embed/yd7vxuPaCAPBk3d19v" width="480" height="338" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/yd7vxuPaCAPBk3d19v">via GIPHY</a></p>
+
+## Set Up
+1. Go to [this](https://github.com/camianderson/chefYeezy) repository and clone it. 
+2. `cd` into the directory.
+3. Run `npm i` in your terminal
+4. Run `npm run start-dev`
+6. Go to http://localhost:3000/ to view the site.
 
 ## Illustrations
-[PHOTOS AND DEMO VIDEO TBD]
+[[PHOTOS AND DEMO VIDEO TBD]](https://media.giphy.com/media/yd7vxuPaCAPBk3d19v/giphy.gif)
 
 ## Future Additions and Improvements
 - Generate custom phrases to translate into chef’s speak
 - Build audio-reader for the translated quote so user can hear it
 - List the date that the quote was generated
 - Star my favorite quotes and categorize by date
-
-## Set Up
-1. Start by going [here](https://github.com/Maia-Cochran/chef-yeezy). From here you will want to click on the green rectangular button titled 'Code'. This should open a drop down menu where you should see a link. To the left of the link there should be an icon with two over lapping squares. You can click the icon to copy the link.
-
-2. You will want to clone down the [repo](https://github.com/Maia-Cochran/chef-yeezy.git) to you terminal using git clone.
-
-3. Once you have cloned the repo, change into the directory and install the project dependencies. Run npm install or npm i to install project dependencies.
-
-4. Run npm start in the terminal to see the page.# chefYeezy
 
 ## Project Spec
 Click [here](https://frontend.turing.edu/projects/module-3/showcase.html) for project specs, provided by [Turing School of Software and Design](https://turing.edu/).
