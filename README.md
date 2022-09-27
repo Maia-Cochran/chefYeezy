@@ -39,7 +39,8 @@ You can view the deployed webpage [here](https://chef-yeezy-app.vercel.app/)!
 6. Go to http://localhost:3000/ to view the site.
 
 ## Illustrations
-[[PHOTOS AND DEMO VIDEO TBD]](https://media.giphy.com/media/yd7vxuPaCAPBk3d19v/giphy.gif)
+[Screen Recording 2022-09-26 at 5.22.07 PM.zip](https://github.com/Maia-Cochran/chefYeezy/files/9650465/Screen.Recording.2022-09-26.at.5.22.07.PM.zip)
+
 
 ## Future Additions and Improvements
 - Generate custom phrases to translate into chef’s speak
