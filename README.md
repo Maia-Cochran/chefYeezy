@@ -29,7 +29,6 @@ chefYeezy is an application that allows users to translate the best of Kanye Wes
 
 ## Deployed Page
 You can view the deployed webpage [here](https://chef-yeezy-app.vercel.app/)!
-<iframe src="https://giphy.com/embed/yd7vxuPaCAPBk3d19v" width="480" height="338" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/yd7vxuPaCAPBk3d19v">via GIPHY</a></p>
 
 ## Set Up
 1. Go to [this](https://github.com/camianderson/chefYeezy) repository and clone it. 
@@ -39,7 +38,7 @@ You can view the deployed webpage [here](https://chef-yeezy-app.vercel.app/)!
 6. Go to http://localhost:3000/ to view the site.
 
 ## Demo
-(https://user-images.githubusercontent.com/101746747/192404983-6e6b4d89-56c0-419a-9d73-5479ba038970.mov)
+https://user-images.githubusercontent.com/101746747/192404983-6e6b4d89-56c0-419a-9d73-5479ba038970.mov
 
 
 
