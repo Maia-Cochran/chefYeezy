@@ -2,7 +2,7 @@ describe('App, Home Page', () => {
   beforeEach(() => {
     cy.intercept('GET', 'https://api.kanye.rest', { fixture: 'kanyeQuote.json' }),
       cy.intercept('GET', `https://api.funtranslations.com/translate/chef.json?text=If%20I%20got%20any%20cooler%20I%20would%20freeze%20to%20death`, { fixture: 'chefSpeakTranslation.json' }),
-      cy.visit('https://chef-yeezy-app.vercel.app/')
+      cy.visit('http://localhost:3000/')
   });
 
   it("user should receive an app header at the top of the page", () => {

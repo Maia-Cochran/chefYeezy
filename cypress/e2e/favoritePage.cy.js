@@ -1,6 +1,6 @@
 describe('Favorites Page', () => {
   beforeEach(() => {
-    cy.visit('https://chef-yeezy-app.vercel.app/myFavoriteQuotes')
+    cy.visit('http://localhost:3000/myFavoriteQuotes')
   });
 
   it("user should receive an app header at the top of the page", () => {
