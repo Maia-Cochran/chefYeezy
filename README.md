@@ -10,7 +10,6 @@
   - [Project Spec](#project-spec)
   - [Set Up](#set-up)
 
-
 ## Overview
 Ever wanted to know what it would sound like if Kanye West were a Swedish chef hero? Me too!
 I am proud and honored to present to you, ✨ chefYeezy ✨ 👩‍🍳 🤌
@@ -29,21 +28,16 @@ chefYeezy is an application that allows users to translate the best of Kanye Wes
 - [Maia Cochran](https://github.com/Maia-Cochran) | [LinkedIn](https://www.linkedin.com/in/maiaecochran/)
 
 ## Deployed Page
-You can view the deployed webpage [here]()!
-
+You can view the deployed webpage [here](https://chef-yeezy-app.vercel.app/)!
 
 ## Illustrations
 [PHOTOS AND DEMO VIDEO TBD]
 
 ## Future Additions and Improvements
 - Generate custom phrases to translate into chef’s speak
-- Star my favorite quotes and categorize by favorites
+- Build audio-reader for the translated quote so user can hear it
 - List the date that the quote was generated
-
-
-## Project Spec
-Click [here](https://frontend.turing.edu/projects/module-3/showcase.html) for project specs, provided by [Turing School of Software and Design](https://turing.edu/).
-
+- Star my favorite quotes and categorize by date
 
 ## Set Up
 1. Start by going [here](https://github.com/Maia-Cochran/chef-yeezy). From here you will want to click on the green rectangular button titled 'Code'. This should open a drop down menu where you should see a link. To the left of the link there should be an icon with two over lapping squares. You can click the icon to copy the link.
@@ -53,3 +47,6 @@ Click [here](https://frontend.turing.edu/projects/module-3/showcase.html) for pr
 3. Once you have cloned the repo, change into the directory and install the project dependencies. Run npm install or npm i to install project dependencies.
 
 4. Run npm start in the terminal to see the page.# chefYeezy
+
+## Project Spec
+Click [here](https://frontend.turing.edu/projects/module-3/showcase.html) for project specs, provided by [Turing School of Software and Design](https://turing.edu/).
