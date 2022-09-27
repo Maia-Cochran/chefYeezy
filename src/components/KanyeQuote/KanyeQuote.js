@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import chefKiss from "/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/components/images/ChefYeezee.png"
+import chefKiss from "/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/images/ChefYeezee.png"
 import './KanyeQuote.css';
 
 const KanyeQuote = ({ id, quote }) => {

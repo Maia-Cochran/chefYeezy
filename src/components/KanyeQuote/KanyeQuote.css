@@ -16,6 +16,7 @@
 }
 .quote-container {
   padding: 2em;
+  margin-top: -2em;
   margin-bottom: -5em;
   display: flex;
   flex-direction: row-reverse;
@@ -33,6 +34,7 @@
 .quote-box {
   margin-left: 2em;
   margin-bottom: -1em;
+  margin-top: -2em;
   padding: .5em;
   height: 20em;
   width: 200%;

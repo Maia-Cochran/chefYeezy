@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { fetchKanyeData, fetchChefData } from '../apiCalls';
 import KanyeQuote from '../KanyeQuote/KanyeQuote';
+import chefKiss from "/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/images/backdrop-image.png"
 import ChefSpeakQuote from '../ChefSpeakQuote/ChefSpeakQuote';
 import FavoriteQuotesPage from '../FavoriteQuotesPage/FavoriteQuotesPage';
 import Header from '../Header/Header'

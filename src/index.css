@@ -3,8 +3,8 @@ body {
   background:#182132;
   font-family: 'Nunito Sans';
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/components/images/backdrop-image.png)
-
+  background-image: url(/Users/maiacochran/turing/3module/showcase/chef-yeezy/src/images/backdrop-image.png)
+}
 .font-link {
   font-family: 'Nunito Sans';
 }
