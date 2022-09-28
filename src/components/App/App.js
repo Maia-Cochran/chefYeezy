@@ -17,11 +17,14 @@ class App extends Component {
       favoriteTranslations: [],
     }
   };
-
+  
   saveTranslation = (event) => {
     event.preventDefault();
     const favs = { id: Date.now(), kanyeQ: this.state.kanyeQuotes, chefQ: this.state.chefSpeakTranslations }
-    this.setState({ favoriteTranslations: [...this.state.favoriteTranslations, favs] })
+    console.log('FAVS', favs)
+    if(!this.state.favoriteTranslations.some(item => item.kanyeQ === favs.kanyeQ)){
+      this.setState({ favoriteTranslations: [...this.state.favoriteTranslations, favs] })
+    }
   }
 
   getNewKanyeQuote() {
