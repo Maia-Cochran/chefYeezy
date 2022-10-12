@@ -21,7 +21,6 @@ class App extends Component {
   saveTranslation = (event) => {
     event.preventDefault();
     const favs = { id: Date.now(), kanyeQ: this.state.kanyeQuotes, chefQ: this.state.chefSpeakTranslations }
-    console.log('FAVS', favs)
     if(!this.state.favoriteTranslations.some(item => item.kanyeQ === favs.kanyeQ)){
       this.setState({ favoriteTranslations: [...this.state.favoriteTranslations, favs] })
     }
@@ -45,7 +44,6 @@ class App extends Component {
   chefSpeak() {
     fetchChefData(this.state.kanyeQuotes)
       .then(result => {
-        console.log('TRANSLATE API:', result)
         this.setState({ chefSpeakTranslations: result.contents.translated })
       })
       .catch(error => console.log(`API error: ${error.message}`))

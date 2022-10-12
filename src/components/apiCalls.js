@@ -10,12 +10,6 @@ const fetchChefData = async (kanyeSays) => {
     .catch(error => console.log(`API error: ${error.message}`));
 }
 
-//COULD I USE A PROMISE.ALL HERE FOR THE APIS??
-//NO, BECAUSE I WANT TO TRANSLATE ON BUTTON CLICK, 
-//NOT ON PAGELOAD... SOMETHING TO CONSIDER FOR FUTURE ITERATION
-
-//CANNOT GET API KEY TO WORK FOR MORE TOKENS
-//ONLY HAVE 5 REQUESTS PER HOUR, 60 PER DAY
-//WILL LOOK INTO FOR FUTURE ITERATION
+//Only have 5 req per hour, 60 per day, looking into possible solutions
 
 export { fetchKanyeData, fetchChefData }
