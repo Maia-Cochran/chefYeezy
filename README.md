@@ -34,7 +34,7 @@ You can view the deployed webpage [here](https://chef-yeezy-app.vercel.app/)!
 https://user-images.githubusercontent.com/101746747/192404983-6e6b4d89-56c0-419a-9d73-5479ba038970.mov
 
 ## Set Up
-1. Go to [this](https://github.com/camianderson/chefYeezy) repository and clone it. 
+1. Go to [this](https://github.com/Maia-Cochran/chefYeezy) repository and clone it. 
 2. `cd` into the directory.
 3. Run `npm i` in your terminal
 4. Run `npm run start-dev`
